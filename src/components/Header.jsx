@@ -52,7 +52,7 @@ export default function Header({ theme, toggleTheme, onRandomize, onReset }) {
         </button>
 
         <a 
-          href="https://github.com/Taoshan98/gradiator" 
+          href="https://github.com/Taoshan98/gradietor" 
           target="_blank" 
           rel="noopener noreferrer"
           className="btn btn-secondary btn-icon tooltip-parent github-toggle" 
