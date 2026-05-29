@@ -1,4 +1,4 @@
-// Color conversion and interpolation utilities for Gradietor
+// Color conversion and interpolation utilities for Gradiator
 
 // -------------------------------------------------------------
 // HELPER STRUCTURES & CONVERTORS
@@ -207,9 +207,9 @@ export function linearRgbToXyz([r, g, b]) {
 }
 
 export function xyzToLinearRgb([x, y, z]) {
-  const r =  3.2404542 * x - 1.5371385 * y - 0.4985314 * z;
+  const r = 3.2404542 * x - 1.5371385 * y - 0.4985314 * z;
   const g = -0.9692660 * x + 1.8760108 * y + 0.0415560 * z;
-  const b =  0.0556434 * x - 0.2040259 * y + 1.0572252 * z;
+  const b = 0.0556434 * x - 0.2040259 * y + 1.0572252 * z;
   return [r, g, b];
 }
 

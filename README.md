@@ -1,11 +1,11 @@
-# <p align="center"><img src="public/logo.png" alt="Gradietor Logo" width="120" /><br>Gradietor</p>
+# <p align="center"><img src="public/logo.png" alt="Gradiator Logo" width="120" /><br>Gradiator</p>
 
-> **Gradietor** is a modern, premium web application for generating **perceptually uniform** multi-stop color gradients in advanced color spaces like **Oklch** and **Oklab**, designed to avoid the muddy "gray dead zones" typical of standard sRGB interpolation.
+> **Gradiator** is a modern, premium web application for generating **perceptually uniform** multi-stop color gradients in advanced color spaces like **Oklch** and **Oklab**, designed to avoid the muddy "gray dead zones" typical of standard sRGB interpolation.
 
 ---
 
 ## 🎨 Table of Contents
-1. [What is Gradietor & How It Works](#-what-is-gradietor--how-it-works)
+1. [What is Gradiator & How It Works](#-what-is-gradiator--how-it-works)
 2. [Supported Color Spaces](#-supported-color-spaces)
 3. [Key Features](#-key-features)
 4. [User Interface (UI)](#-user-interface-ui)
@@ -15,14 +15,14 @@
 
 ---
 
-## 💡 What is Gradietor & How It Works
+## 💡 What is Gradiator & How It Works
 
 Traditionally, web browser gradients are computed by interpolating values in the **sRGB** color space. While simple, this method has a major drawback: sRGB is not **perceptually linear**. Consequently, the transition between two opposing colors (e.g., blue and yellow) often passes through a grayish, dull, or muddy region known as the "gradient dead zone."
 
-**Gradietor** solves this issue by allowing you to calculate intermediate steps in **Oklab** and **Oklch** color spaces, which are specifically designed to emulate human visual perception.
+**Gradiator** solves this issue by allowing you to calculate intermediate steps in **Oklab** and **Oklch** color spaces, which are specifically designed to emulate human visual perception.
 
 ### Cylindrical Interpolation and Hue Paths
-In cylindrical color spaces (such as *Oklch*, *HSL*, *HSV*, *LCH*), colors include an angular coordinate for hue. When interpolating between two hues, Gradietor offers two main options:
+In cylindrical color spaces (such as *Oklch*, *HSL*, *HSV*, *LCH*), colors include an angular coordinate for hue. When interpolating between two hues, Gradiator offers two main options:
 - **Shorter Path**: Interpolates along the smaller arc of the color wheel (avoiding excessive hue shifts).
 - **Longer Path**: Interpolates along the larger arc of the color wheel, producing a rich transition that spans a wider variety of intermediate hues (controlled rainbow effect).
 
@@ -30,7 +30,7 @@ In cylindrical color spaces (such as *Oklch*, *HSL*, *HSV*, *LCH*), colors inclu
 
 ## 🌈 Supported Color Spaces
 
-Gradietor allows you to experiment with color interpolation across a wide variety of color spaces:
+Gradiator allows you to experiment with color interpolation across a wide variety of color spaces:
 
 - **Oklch** (Recommended / Default): A perceptually uniform cylindrical space. Excellent for maintaining consistent lightness and chroma during hue transitions.
 - **Oklab**: The Cartesian counterpart to Oklch, ideal for linear, smooth transitions without perceptual spikes.
@@ -81,7 +81,7 @@ The application is built to offer a **premium** and fluid user experience:
 
 ## ⚙️ Local Installation Guide
 
-If you want to run Gradietor locally, make modifications, or host it yourself, follow these steps:
+If you want to run Gradiator locally, make modifications, or host it yourself, follow these steps:
 
 ### Prerequisites
 Make sure you have **Node.js** (v18 or higher recommended) and **npm** (included with Node.js) installed.
@@ -90,10 +90,10 @@ Make sure you have **Node.js** (v18 or higher recommended) and **npm** (included
 Download the project code to your local machine:
 ```bash
 git clone <repository-url>
-cd gradietor
+cd gradiator
 ```
 
-*(Note: If you are already inside the development directory `/home/ntm/Develop/Taoshan/gradietor`, skip cloning and run the commands directly).*
+*(Note: If you are already inside the development directory `/home/ntm/Develop/Taoshan/gradiator`, skip cloning and run the commands directly).*
 
 ### 2. Install Dependencies
 Run the install command to download all required packages (Vite, React, Lucide-React, etc.):

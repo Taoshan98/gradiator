@@ -16,7 +16,7 @@ const DEFAULT_STOPS = [
 export default function App() {
   // Theme state
   const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem('gradietor-theme');
+    const saved = localStorage.getItem('gradiator-theme');
     if (saved) return saved;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
@@ -31,7 +31,7 @@ export default function App() {
   // Sync theme attribute with HTML tag
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('gradietor-theme', theme);
+    localStorage.setItem('gradiator-theme', theme);
   }, [theme]);
 
   // Toggle theme handler

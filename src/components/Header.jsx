@@ -26,13 +26,13 @@ export default function Header({ theme, toggleTheme, onRandomize, onReset }) {
       <div className="header-logo-group">
         <Logo size={52} showText={false} />
         <div>
-          <h1 className="logo-title">Gradietor</h1>
+          <h1 className="logo-title">Gradiator</h1>
           <p className="logo-subtitle">Perceptually uniform multi-stop color interpolator</p>
         </div>
       </div>
       <div className="header-actions">
-        <button 
-          className="btn btn-secondary tooltip-parent" 
+        <button
+          className="btn btn-secondary tooltip-parent"
           onClick={onRandomize}
           aria-label="Randomize Stops"
         >
@@ -41,8 +41,8 @@ export default function Header({ theme, toggleTheme, onRandomize, onReset }) {
           <div className="tooltip">Generate random stop colors</div>
         </button>
 
-        <button 
-          className="btn btn-secondary tooltip-parent" 
+        <button
+          className="btn btn-secondary tooltip-parent"
           onClick={onReset}
           aria-label="Reset Gradient"
         >
@@ -51,19 +51,19 @@ export default function Header({ theme, toggleTheme, onRandomize, onReset }) {
           <div className="tooltip">Reset to default scale</div>
         </button>
 
-        <a 
-          href="https://github.com/Taoshan98/gradiator" 
-          target="_blank" 
+        <a
+          href="https://github.com/Taoshan98/gradiator"
+          target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-secondary btn-icon tooltip-parent github-toggle" 
+          className="btn btn-secondary btn-icon tooltip-parent github-toggle"
           aria-label="GitHub Repository"
         >
           <Github size={18} />
           <div className="tooltip">GitHub Repository</div>
         </a>
 
-        <button 
-          className="btn btn-secondary btn-icon tooltip-parent theme-toggle" 
+        <button
+          className="btn btn-secondary btn-icon tooltip-parent theme-toggle"
           onClick={toggleTheme}
           aria-label="Toggle Theme"
         >

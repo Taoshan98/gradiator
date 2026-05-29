@@ -12,7 +12,7 @@ export default function Logo({ size = 48, showText = true, className = '' }) {
       height={size}
       fill="none"
       className={className}
-      style={{verticalAlign: 'middle', display: 'inline-block'}}
+      style={{ verticalAlign: 'middle', display: 'inline-block' }}
     >
       {/* Radiator Character */}
       <image href={RADIATOR_BASE64} x="0" y="0" width="300" height="300" />
@@ -37,7 +37,7 @@ export default function Logo({ size = 48, showText = true, className = '' }) {
               letterSpacing: '1.5px'
             }}
           >
-            GRADIETOR
+            GRADIATOR
           </text>
           {/* Main text with dark slate outline */}
           <text
