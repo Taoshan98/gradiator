@@ -17,7 +17,7 @@ export default function Logo({ size = 48, showText = true, className = '' }) {
       {/* Radiator Character */}
       <image href={RADIATOR_BASE64} x="0" y="0" width="300" height="300" />
 
-      {/* "GRADIETOR" Text Overlay inside the radiator */}
+      {/* GRADIATOR Text Overlay inside the radiator */}
       {showText && (
         <g>
           {/* White halo/backing for readability */}
@@ -57,7 +57,7 @@ export default function Logo({ size = 48, showText = true, className = '' }) {
               letterSpacing: '1.5px'
             }}
           >
-            GRADIETOR
+            GRADIATOR
           </text>
         </g>
       )}
